@@ -1,0 +1,1 @@
+{"version":3,"names":["_reactNative","require","_default","exports","default","codegenNativeComponent","interfaceOnly"],"sourceRoot":"../../../src","sources":["fabric/MaskNativeComponent.ts"],"mappings":";;;;;;AAAA,IAAAA,YAAA,GAAAC,OAAA;AAAsD,IAAAC,QAAA,GAAAC,OAAA,CAAAC,OAAA,GA4EvC,IAAAC,mCAAsB,EAAc,WAAW,EAAE;EAC9DC,aAAa,EAAE;AACjB,CAAC,CAAC","ignoreList":[]}

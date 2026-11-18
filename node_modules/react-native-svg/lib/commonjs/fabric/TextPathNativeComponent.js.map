@@ -1,0 +1,1 @@
+{"version":3,"names":["_reactNative","require","_default","exports","default","codegenNativeComponent","interfaceOnly"],"sourceRoot":"../../../src","sources":["fabric/TextPathNativeComponent.ts"],"mappings":";;;;;;AAAA,IAAAA,YAAA,GAAAC,OAAA;AAAsD,IAAAC,QAAA,GAAAC,OAAA,CAAAC,OAAA,GAyFvC,IAAAC,mCAAsB,EAAc,eAAe,EAAE;EAClEC,aAAa,EAAE;AACjB,CAAC,CAAC","ignoreList":[]}

@@ -1,0 +1,21 @@
+plugins {
+  id 'com.android.library'
+  id 'expo-module-gradle-plugin'
+}
+
+group = 'host.exp.exponent'
+version = '58.0.2'
+
+android {
+  namespace "expo.modules.securestore"
+  defaultConfig {
+    versionCode 17
+    versionName '58.0.2'
+  }
+}
+
+dependencies {
+  implementation "androidx.biometric:biometric:1.1.0"
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation "org.robolectric:robolectric:4.16"
+}

@@ -1,56 +1,107 @@
-# Welcome to your Expo app 👋
+# NMSU Study Finder – Studyroom Rating App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile application that allows New Mexico State University students to discover, review, rate, and save study spaces around campus.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Browse study locations around NMSU
+- View student ratings and reviews
+- Create an account and securely log in
+- Submit studyroom reviews
+- Save favorite study locations
+- Recommend new study spaces
+- View personal account activity
 
-   ```bash
-   npm install
-   ```
+## Technology Stack
 
-2. Start the app
+**Frontend**
+- React Native
+- Expo
+- TypeScript
+- Expo Router
 
-   ```bash
-   npx expo start
-   ```
+**Backend**
+- Node.js
+- Express.js
+- MySQL-compatible database (TiDB Cloud)
+- JWT authentication
 
-In the output, you'll find options to open the app in a
+**Hosting**
+- Render (backend API)
+- TiDB Cloud (database)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Getting Started
 
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Prerequisites
 
-## Get a fresh project
+Install the following:
 
-When you're ready, run:
+- [Node.js](https://nodejs.org/)
+- [Git](https://git-scm.com/)
+- [Expo Go](https://expo.dev/go) on your mobile device
+
+### 1. Clone the Repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/nvelappan/RatingApp.git
+cd RatingApp
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+### 2. Install Frontend Dependencies
 
-### Other setup steps
+```bash
+npm ci
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+### 3. Start the Application
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Scan the QR code using Expo Go to open the application.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+If you experience network connectivity issues, try:
 
-## Join the community
+```bash
+npx expo start --tunnel
+```
 
-Join our community of developers creating universal apps.
+## Backend Architecture
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+The application communicates with a hosted Express API on Render. The API connects to the TiDB Cloud database.
+
+For normal app usage, team members do not need to install MySQL, create a TiDB account, or configure their own Render service.
+
+### Running the Backend Locally (Optional)
+
+To develop or modify the backend:
+
+```bash
+cd backend
+npm ci
+node server.js
+```
+
+A separate backend configuration file (`backend/.env`) is required. Contact the project maintainer for the required configuration. Never commit actual credentials or secrets.
+
+## Project Structure
+
+```text
+RatingApp/
+├── app/                 # Expo application screens
+├── assets/              # Images and application assets
+├── backend/             # Express API and database connection
+├── components/          # Reusable UI components
+├── constants/           # Application constants
+├── package.json         # Frontend dependencies
+├── package-lock.json    # Frontend dependency lockfile
+└── README.md            # Project documentation
+```
+
+## Notes
+
+- Use the Node.js version supported by the project's Expo SDK.
+- Run `npm ci` after cloning or when dependencies change.
+- The backend and database are hosted separately from the mobile application.
+- Do not commit `.env` files, database credentials, or authentication secrets.

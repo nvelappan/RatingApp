@@ -1,0 +1,1 @@
+{"version":3,"names":["Image","resolveAssetUri","source","resolveAssetSource"],"sourceRoot":"../../../src","sources":["lib/resolveAssetUri.ts"],"mappings":"AAAA,SACEA,KAAK,QAIA,cAAc;;AAErB;AACA;AACA;AACA,OAAO,SAASC,eAAeA,CAC7BC,MAAiD,EACP;EAC1C,OAAOF,KAAK,CAACG,kBAAkB,CAACD,MAA6B,CAAC;AAChE","ignoreList":[]}
