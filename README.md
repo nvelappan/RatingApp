@@ -50,7 +50,7 @@ cd RatingApp
 ### 2. Install Frontend Dependencies
 
 ```bash
-npm ci
+npx ci
 ```
 
 ### 3. Start the Application
